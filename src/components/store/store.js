@@ -6,6 +6,7 @@ import {appState} from './../reducers/index.js';
 
 const middleware = [thunk]
 
+/*
 const store = createStore(
     rootReducer,
     appState,
@@ -14,14 +15,14 @@ const store = createStore(
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     )
 );
+*/
 
-/*
 const store = createStore(
     rootReducer,
     appState,
     compose(
-        applyMiddleware(...middleware),
+        applyMiddleware(...middleware)
     )
 );
-*/
+
 export default store;
